@@ -1,0 +1,4 @@
+- create new project: `nest new your_project_name`
+- create module: `nest generate module your_module_name`
+- generate controller: `nest generate controller your_controller_name`
+- generate service: `nest generate service your_service_name`
