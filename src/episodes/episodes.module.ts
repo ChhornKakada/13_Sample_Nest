@@ -1,10 +1,10 @@
 import { Module } from '@nestjs/common';
 import { EpisodesController } from './episodes.controller';
 import { EpisodesService } from './episodes.service';
-import { ConfigService } from 'src/config/config.service';
+import { ConfigModule } from 'src/config/config.module';
 
 @Module({
-  imports: [ConfigService],
+  imports: [ConfigModule],
   controllers: [EpisodesController],
   providers: [EpisodesService]
 })

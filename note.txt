@@ -2,3 +2,5 @@
 - create module: `nest generate module your_module_name`
 - generate controller: `nest generate controller your_controller_name`
 - generate service: `nest generate service your_service_name`
+- `nest g pi pipes/is-positive`: means that you create a is-positive in the folder of pipes, but it has its own folder too named `is-positive`.
+- `nest g pi pipes/is-positive --flat`: means that you create a is-positive pipe in the folder of `pipes` without its own folder named `is-positive`.
