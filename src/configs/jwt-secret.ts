@@ -1,0 +1,1 @@
+export const JWT_SECRET = "hey-this-is-the-key-for-generating-code-bro";
