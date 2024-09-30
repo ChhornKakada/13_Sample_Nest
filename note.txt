@@ -5,3 +5,19 @@
 - `nest g pi pipes/is-positive`: means that you create a is-positive in the folder of pipes, but it has its own folder too named `is-positive`.
 - `nest g pi pipes/is-positive --flat`: means that you create a is-positive pipe in the folder of `pipes` without its own folder named `is-positive`.
 - `nest g gu auth/guards/auth --flat --no-spec`: creating guard as you see
+- add script to to generate and migration in package.json
+  - first, it generate the schema to sql script, when migration is run that script to create table in database
+
+- alternative code structure:
+  - src/
+    - database/
+      - database.module.ts
+      - database-connection.ts
+    - schemas/
+      - users.schema.ts
+      - posts.schema.ts
+      - ...
+    - middlewares/
+      - token.middleware.ts
+    - guards/
+      - role.guard.ts

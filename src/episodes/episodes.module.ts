@@ -1,10 +1,9 @@
 import { Module } from '@nestjs/common';
 import { EpisodesController } from './episodes.controller';
 import { EpisodesService } from './episodes.service';
-import { ConfigModule } from 'src/config/config.module';
 
 @Module({
-  imports: [ConfigModule],
+  imports: [],
   controllers: [EpisodesController],
   providers: [EpisodesService]
 })
